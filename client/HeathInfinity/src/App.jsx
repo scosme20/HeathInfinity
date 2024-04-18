@@ -7,15 +7,17 @@ import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row'; // Importe o componente de linha
+import Row from 'react-bootstrap/Row'; 
+import ListGroup from 'react-bootstrap/ListGroup';
+
 
 function OffcanvasExample() {
   return (
     <>
-    <div>
-      <Navbar expand="lg" className="bg-body-tertiary">
+    <div className='bg-white'>
+      <Navbar expand="lg" className="bg-white  border border-primary m-2">
         <Container fluid>
-          <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+          <Navbar.Brand href="#">HeathInfinity</Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar-expand" />
           <Navbar.Offcanvas
             id="offcanvasNavbar-expand"
@@ -33,11 +35,10 @@ function OffcanvasExample() {
                 <Nav.Link href="#action2">Link</Nav.Link>
                 <NavDropdown
                   title="Dropdown"
-                  id="offcanvasNavbarDropdown-expand"
-                  style={{ color: 'white' }}
+                   id="offcanvasNavbarDropdown-expand"
                 >
-                  <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">
+                  <NavDropdown.Item href="#action3" >Action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action4" >
                     Another action
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
@@ -53,7 +54,7 @@ function OffcanvasExample() {
                   className="me-2"
                   aria-label="Search"
                 />
-                <Button variant="outline-success">Search</Button>
+                <Button variant="outline-primary">Search</Button>
               </Form>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
@@ -156,6 +157,107 @@ function OffcanvasExample() {
       <footer className="bg-dark text-light text-center py-3">
       Este é o footer
     </footer>
+    <Row className="d-flex m-2">
+    <Card style={{ width: '18rem' }}>
+    <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+    <Card.Body>
+      <Card.Title>Card Title</Card.Title>
+      <Card.Text>
+        Some quick example text to build on the card title and make up the
+        bulk of the card's content.
+      </Card.Text>
+    </Card.Body>
+    <ListGroup className="list-group-flush">
+      <ListGroup.Item>Cras justo odio</ListGroup.Item>
+      <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
+      <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+    </ListGroup>
+    <Card.Body>
+      <Card.Link href="#">Card Link</Card.Link>
+      <Card.Link href="#">Another Link</Card.Link>
+    </Card.Body>
+  </Card>
+
+  <Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Text>
+      Some quick example text to build on the card title and make up the
+      bulk of the card's content.
+    </Card.Text>
+  </Card.Body>
+  <ListGroup className="list-group-flush">
+    <ListGroup.Item>Cras justo odio</ListGroup.Item>
+    <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
+    <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+  </ListGroup>
+  <Card.Body>
+    <Card.Link href="#">Card Link</Card.Link>
+    <Card.Link href="#">Another Link</Card.Link>
+  </Card.Body>
+</Card>
+
+<Card style={{ width: '18rem' }}>
+<Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+<Card.Body>
+  <Card.Title>Card Title</Card.Title>
+  <Card.Text>
+    Some quick example text to build on the card title and make up the
+    bulk of the card's content.
+  </Card.Text>
+</Card.Body>
+<ListGroup className="list-group-flush">
+  <ListGroup.Item>Cras justo odio</ListGroup.Item>
+  <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
+  <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+</ListGroup>
+<Card.Body>
+  <Card.Link href="#">Card Link</Card.Link>
+  <Card.Link href="#">Another Link</Card.Link>
+</Card.Body>
+</Card>
+
+<Card style={{ width: '18rem' }}>
+<Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+<Card.Body>
+  <Card.Title>Card Title</Card.Title>
+  <Card.Text>
+    Some quick example text to build on the card title and make up the
+    bulk of the card's content.
+  </Card.Text>
+</Card.Body>
+<ListGroup className="list-group-flush">
+  <ListGroup.Item>Cras justo odio</ListGroup.Item>
+  <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
+  <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+</ListGroup>
+<Card.Body>
+  <Card.Link href="#">Card Link</Card.Link>
+  <Card.Link href="#">Another Link</Card.Link>
+</Card.Body>
+</Card>
+
+<Card style={{ width: '18rem' }}>
+<Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
+<Card.Body>
+  <Card.Title>Card Title</Card.Title>
+  <Card.Text>
+    Some quick example text to build on the card title and make up the
+    bulk of the card's content.
+  </Card.Text>
+</Card.Body>
+<ListGroup className="list-group-flush">
+  <ListGroup.Item>Cras justo odio</ListGroup.Item>
+  <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
+  <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+</ListGroup>
+<Card.Body>
+  <Card.Link href="#">Card Link</Card.Link>
+  <Card.Link href="#">Another Link</Card.Link>
+</Card.Body>
+</Card>
+  </Row>
     </div>
     </>
   );
