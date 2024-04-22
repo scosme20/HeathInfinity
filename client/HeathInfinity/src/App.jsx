@@ -14,8 +14,8 @@ import ListGroup from 'react-bootstrap/ListGroup';
 function OffcanvasExample() {
   return (
     <>
-    <div className='bg-white'>
-      <Navbar expand="lg" className="bg-white  border border-primary m-2">
+    <div className=''>
+      <Navbar expand="lg" className="bg-primary  border border-primary">
         <Container fluid>
           <Navbar.Brand href="#">HeathInfinity</Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar-expand" />
@@ -32,18 +32,18 @@ function OffcanvasExample() {
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 <Nav.Link href="#action1">Home</Nav.Link>
-                <Nav.Link href="#action2">Link</Nav.Link>
+                <Nav.Link href="#action2">About</Nav.Link>
                 <NavDropdown
-                  title="Dropdown"
+                  title="More"
                    id="offcanvasNavbarDropdown-expand"
                 >
-                  <NavDropdown.Item href="#action3" >Action</NavDropdown.Item>
+                  <NavDropdown.Item href="#action3" >Agreements</NavDropdown.Item>
                   <NavDropdown.Item href="#action4" >
-                    Another action
+                  Specialties
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#action5">
-                    Something else here
+                  Our units
                   </NavDropdown.Item>
                 </NavDropdown>
               </Nav>
@@ -54,7 +54,7 @@ function OffcanvasExample() {
                   className="me-2"
                   aria-label="Search"
                 />
-                <Button variant="outline-primary">Search</Button>
+                <Button variant="outline-light">Search</Button>
               </Form>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
@@ -70,7 +70,7 @@ function OffcanvasExample() {
             height={"500"}
           />
           <Carousel.Caption>
-            <h3>First slide label</h3>
+            <h3>Houston</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -83,7 +83,7 @@ function OffcanvasExample() {
             height={"500"}
           />
           <Carousel.Caption>
-            <h3>Second slide label</h3>
+            <h3>Massachusetts</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -96,7 +96,7 @@ function OffcanvasExample() {
             height={"500"}
           />
           <Carousel.Caption>
-            <h3>Third slide label</h3>
+            <h3>São Paulo</h3>
             <p>
               Praesent commodo cursus magna, vel scelerisque nisl consectetur.
             </p>
@@ -109,7 +109,7 @@ function OffcanvasExample() {
         <Card style={{ width: '18rem', margin: '10px' }}>
           <Card.Img variant="top" src="https://fcmsantacasasp.edu.br/blog/wp-content/uploads/2022/03/especialista-ou-generalista.jpg"  width={"200"} height={"200"} className='mt-2' />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>Our Experts</Card.Title>
             <Card.Text>
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
@@ -133,7 +133,7 @@ function OffcanvasExample() {
         <Card style={{ width: '18rem', margin: '10px' }}>
           <Card.Img variant="top" src="https://prodoctor.net/blog/wp-content/uploads/2021/08/SAIBA-COMO-A-TECNOLOGIA-PODE-REDUZIR-A-BUROCRACIA-NO-SEU-CONSULTORIO.png"  width={"200"} height={"200"} className='mt-2'  />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>Our Methods</Card.Title>
             <Card.Text>
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
@@ -145,7 +145,7 @@ function OffcanvasExample() {
         <Card style={{ width: '18rem', margin: '10px' }}>
           <Card.Img variant="top" src="https://img.freepik.com/fotos-premium/recepcao-da-zona-de-recepcao-do-consultorio-medico-com-dispositivos-tecnologicos-material-de-escritorio-e-utilitarios-medicos-area-de-recepcao-do-paciente-sem-funcionarios-atendendo-a-ninguem-ninguem-no-lobby-da-clinica_482257-52940.jpg"  width={"200"} height={"200"} className='mt-2'  />
           <Card.Body>
-            <Card.Title>Card Title</Card.Title>
+            <Card.Title>Our installations</Card.Title>
             <Card.Text>
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
@@ -154,110 +154,8 @@ function OffcanvasExample() {
           </Card.Body>
         </Card>
       </Row>
-      <footer className="bg-dark text-light text-center py-3">
-      Este é o footer
+      <footer className="bg-primary text-light text-center py-3">
     </footer>
-    <Row className="d-flex m-2">
-    <Card style={{ width: '18rem' }}>
-    <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
-    <Card.Body>
-      <Card.Title>Card Title</Card.Title>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the
-        bulk of the card's content.
-      </Card.Text>
-    </Card.Body>
-    <ListGroup className="list-group-flush">
-      <ListGroup.Item>Cras justo odio</ListGroup.Item>
-      <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-      <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-    </ListGroup>
-    <Card.Body>
-      <Card.Link href="#">Card Link</Card.Link>
-      <Card.Link href="#">Another Link</Card.Link>
-    </Card.Body>
-  </Card>
-
-  <Card style={{ width: '18rem' }}>
-  <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
-  <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the
-      bulk of the card's content.
-    </Card.Text>
-  </Card.Body>
-  <ListGroup className="list-group-flush">
-    <ListGroup.Item>Cras justo odio</ListGroup.Item>
-    <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-    <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-  </ListGroup>
-  <Card.Body>
-    <Card.Link href="#">Card Link</Card.Link>
-    <Card.Link href="#">Another Link</Card.Link>
-  </Card.Body>
-</Card>
-
-<Card style={{ width: '18rem' }}>
-<Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
-<Card.Body>
-  <Card.Title>Card Title</Card.Title>
-  <Card.Text>
-    Some quick example text to build on the card title and make up the
-    bulk of the card's content.
-  </Card.Text>
-</Card.Body>
-<ListGroup className="list-group-flush">
-  <ListGroup.Item>Cras justo odio</ListGroup.Item>
-  <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-  <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-</ListGroup>
-<Card.Body>
-  <Card.Link href="#">Card Link</Card.Link>
-  <Card.Link href="#">Another Link</Card.Link>
-</Card.Body>
-</Card>
-
-<Card style={{ width: '18rem' }}>
-<Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
-<Card.Body>
-  <Card.Title>Card Title</Card.Title>
-  <Card.Text>
-    Some quick example text to build on the card title and make up the
-    bulk of the card's content.
-  </Card.Text>
-</Card.Body>
-<ListGroup className="list-group-flush">
-  <ListGroup.Item>Cras justo odio</ListGroup.Item>
-  <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-  <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-</ListGroup>
-<Card.Body>
-  <Card.Link href="#">Card Link</Card.Link>
-  <Card.Link href="#">Another Link</Card.Link>
-</Card.Body>
-</Card>
-
-<Card style={{ width: '18rem' }}>
-<Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
-<Card.Body>
-  <Card.Title>Card Title</Card.Title>
-  <Card.Text>
-    Some quick example text to build on the card title and make up the
-    bulk of the card's content.
-  </Card.Text>
-</Card.Body>
-<ListGroup className="list-group-flush">
-  <ListGroup.Item>Cras justo odio</ListGroup.Item>
-  <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-  <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-</ListGroup>
-<Card.Body>
-  <Card.Link href="#">Card Link</Card.Link>
-  <Card.Link href="#">Another Link</Card.Link>
-</Card.Body>
-</Card>
-  </Row>
     </div>
     </>
   );
